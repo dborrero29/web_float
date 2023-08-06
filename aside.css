@@ -1,0 +1,88 @@
+aside {
+    float: left;
+    width: 20%;
+    background-color: white;
+    box-shadow: 2px 2px 5px white;
+    padding: 30px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+aside h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    background-color: var(--third-color);
+    padding: 5px;
+    box-shadow: 2px 2px 5px var(--third-color);
+}
+
+.widget {
+    margin-bottom: 40px;
+}
+
+.widget form input[type="email"], .widget form input[type="password"] {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.widget form input[type="email"]:hover, .widget form input[type="password"]:hover {
+    border-color: var(--secondary-color);
+    border-width: 1.5x;
+}
+
+.widget form input[type="submit"]  {
+    width: 100%;
+    color: white;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--shadow);
+    transition: all 0.5s;
+}
+
+.widget form input[type="submit"]:hover {
+    background-color: var(--secondary-color-dark);
+    cursor: pointer;
+}
+
+.widget p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.widget p+p {
+    margin-top: 3px;
+}
+
+.widget p a {
+    color: blue;
+}
+
+.widget ul {
+    list-style: circle;
+    padding-left: 30px;
+}
+
+.widget ul li {
+    margin: 15px 0;
+}
+
+.widget ul li a {
+    color: var(--primary-color);
+}
+
+.widget a:hover {
+    color: var(--secondary-color-dark);
+}
+
+@media (max-width: 700px) {
+    
+    aside {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

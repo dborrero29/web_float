@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url(background.jpg);
+    font-family: "NunitoSans-Regular", Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.secondary {
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+
+    #container {
+        margin: 0;
+        width: 100%;
+    }
+}

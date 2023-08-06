@@ -1,0 +1,70 @@
+#main-menu {
+    width: 100%;
+    float: left;
+    background-color: var(--secondary-color);
+    box-shadow: 2px 2px 5px var(--shadow);
+}
+
+#main-menu > ul > li {
+    float: left;
+    margin: 10px 0;
+}
+
+#main-menu > ul > li > a {
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-right: 1px solid var(--shadow);
+    font-size: 14px;
+    transition: all 0.4s;
+}
+
+#main-menu > ul > li > ul {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+}
+
+#main-menu > ul > li > a:hover {
+    background-color: var(--secondary-color-dark);
+}
+
+#main-menu > ul > li > ul > li > a {
+    display: block;
+    color: white;
+    background-color: rgb(255, 89, 59);
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--shadow);
+}
+
+#main-menu > ul > li > ul > li > a:hover {
+    background-color: var(--third-color-dark);
+}
+
+#main-menu > ul > li:hover > ul {
+    display: block;
+}
+
+@media (max-width: 700px) {
+
+    #main-menu > ul > li {
+        width: 100%;
+        margin: 0;
+        border-bottom: solid 1px var(--shadow);
+    }
+
+    #main-menu > ul > li > a {
+        display: block;
+        text-align: center;
+    }
+
+    #main-menu > ul > li > ul {
+        width: 100%;
+        margin: 0;
+    }
+
+    #main-menu > ul > li > ul > li {
+        text-align: center;
+    }
+}
